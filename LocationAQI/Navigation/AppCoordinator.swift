@@ -20,7 +20,7 @@ final class AppCoordinator {
 
     init(mapViewModel: MapViewModel) {
         self.mapViewModel = mapViewModel
-    }/var/folders/6l/qycknszx39ggq_mh5gkq_z1m0000gn/T/TemporaryItems/NSIRD_screencaptureui_sTlSb8/Screen Recording 2026-06-27 at 8.59.11 PM.mov
+    }
 
     func navigate(to route: AppRoute) {
         path.append(route)
