@@ -6,13 +6,32 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A255348E2FEFE07F00138F67 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A255348D2FEFE07F00138F67 /* Config.xcconfig */; };
+		A25534912FEFE0FD00138F67 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A25534902FEFE0FD00138F67 /* Alamofire */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		A25534292FEFDCEE00138F67 /* LocationAQI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationAQI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A255348D2FEFE07F00138F67 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A25534952FEFE5DA00138F67 /* Exceptions for "LocationAQI" folder in "LocationAQI" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A25534282FEFDCEE00138F67 /* LocationAQI */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		A255342B2FEFDCEE00138F67 /* LocationAQI */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A25534952FEFE5DA00138F67 /* Exceptions for "LocationAQI" folder in "LocationAQI" target */,
+			);
 			path = LocationAQI;
 			sourceTree = "<group>";
 		};
@@ -23,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A25534912FEFE0FD00138F67 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +52,7 @@
 		A25534202FEFDCEE00138F67 = {
 			isa = PBXGroup;
 			children = (
+				A255348D2FEFE07F00138F67 /* Config.xcconfig */,
 				A255342B2FEFDCEE00138F67 /* LocationAQI */,
 				A255342A2FEFDCEE00138F67 /* Products */,
 			);
@@ -65,6 +86,7 @@
 			);
 			name = LocationAQI;
 			packageProductDependencies = (
+				A25534902FEFE0FD00138F67 /* Alamofire */,
 			);
 			productName = LocationAQI;
 			productReference = A25534292FEFDCEE00138F67 /* LocationAQI.app */;
@@ -94,6 +116,9 @@
 			);
 			mainGroup = A25534202FEFDCEE00138F67;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A255348F2FEFE0FD00138F67 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A255342A2FEFDCEE00138F67 /* Products */;
 			projectDirPath = "";
@@ -109,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A255348E2FEFE07F00138F67 /* Config.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +153,7 @@
 /* Begin XCBuildConfiguration section */
 		A25534322FEFDCF000138F67 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A255348D2FEFE07F00138F67 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -190,6 +217,7 @@
 		};
 		A25534332FEFDCF000138F67 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A255348D2FEFE07F00138F67 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -246,6 +274,7 @@
 		};
 		A25534352FEFDCF000138F67 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A255348D2FEFE07F00138F67 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -253,11 +282,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LocationAQI/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App uses location to get the AQI and address.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -277,6 +309,7 @@
 		};
 		A25534362FEFDCF000138F67 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A255348D2FEFE07F00138F67 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -284,11 +317,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LocationAQI/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App uses location to get the AQI and address.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,6 +364,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A255348F2FEFE0FD00138F67 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A25534902FEFE0FD00138F67 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A255348F2FEFE0FD00138F67 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A25534212FEFDCEE00138F67 /* Project object */;
 }

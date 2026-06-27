@@ -1,0 +1,11 @@
+//
+//  Config.xcconfig
+//  LocationAQI
+//
+//  Created by Prateek Kotian on 27/06/26.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project
+
+AQICN_API_TOKEN = 5512cc076d7b2a72f4231acda672cac066633a4e
